@@ -1,0 +1,7 @@
+Amit  100
+Sunil 2000
+Rakesh  5000
+amit 4000
+Rahul 300
+rakesh 100
+rahul 50

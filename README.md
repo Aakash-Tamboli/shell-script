@@ -98,12 +98,12 @@ I used sh and bash shell.
            So In this mini-project I created the shell-scripts who are deal with real life problem.
            Problem:
            Here is Prafull Sir Who have some new employees and he want to configure the linux machine
-           means create all user accounts for each employee So he come to me because i am also employee
-           of his company and give me task that should manage this all things
-           So I give me a directory containing called Operator further Operator directory containing employees.data
-           and apps directory further apps directory contains a executable programs.
-           1) So I automate the creation of new users according to employees.data where username should be
-           first_name+employeeid and password is also given in employees.data
+           means create all user accounts for each employee So he come to me because i am also
+           employee of his company and give me task that should manage this all things
+           So I give me a directory containing called Operator further Operator directory containing
+           employees.data and apps directory further apps directory contains a executable programs.
+           1) So I automate the creation of new users according to employees.data where username
+           should be first_name+employeeid and password is also given in employees.data
            Ex: amit10001
            2)then each user contains directory called tm.
            3)then change its ownership using chown for each user
@@ -116,7 +116,20 @@ I used sh and bash shell.
            9)then change its ownership for each user
           10) then add environment variable inside .bashrc file for each user
 
-          first of all I created script called "content_generator.sh" to run this command bash content_generator.sh
-it will create all the necessary
+          first of all I created script called "content_generator.sh" to run this command
+          bash content_generator.sh it will create all the necessary folder structure and
+          files(dummy)
+          NOTE: Employees.data should contains
+          employee_id | employee_first_name | employee_last_name | employee password
+          10001       | Amit                | Sharma             | aaa
 
+          then I created create_multiple_users_for_employee.sh. To execute
+          sudo  bash create_multiple_users_for_employee.sh $HOME
+          sudo is for inside script we are creating users that the super user power or right and $HOME
+          is for where our content_generator.sh script generates the Operator directory
+
+          then i create clean_all.sh to clean whatever my script did it deletes users as well as the Operator directory
+          present on $HOME to execute
+          sudo bash clean_all.sh $HOME
+          Thank You
 ```

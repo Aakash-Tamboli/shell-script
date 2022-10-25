@@ -3,10 +3,13 @@
 Hi, My name is Aakash,This is my shell script respositorie contains various scripts consider all scripts like mini-projects from my side
 
 ## Which shell I used
+
 I used sh and bash shell.
 
 ## Scripts
-1) ### Print all persons name with total money they taken:
+
+1. ### Print all persons name with total money they taken:
+
 ```
            it is a script which takes argument as text file and gives you the output
            of total money taken by each person
@@ -15,9 +18,11 @@ I used sh and bash shell.
                 Amit is taken total money : 4100
                 Rahul is taken total money : 350
                 Rakesh is taken total money : 5100
-                Sunil is taken total money : 2000           
+                Sunil is taken total money : 2000
 ```
+
 ### Note: Your data file should contains data in this fashion
+
 ```
 **** Multiple spaces allowed between name and amount
                    Name  Amount
@@ -29,21 +34,25 @@ I used sh and bash shell.
                     rakesh 100
                     rahul 50
 ```
-2) ### Print total bytes of files store in the particular directory:
+
+2. ### Print total bytes of files store in the particular directory:
+
 ```
-           it is a script which takes argument as path of your directory and it 
+           it is a script which takes argument as path of your directory and it
            produce output sum of total bytes consumed by *files in your given directory
            O/p= Inside CLI
                 bash bash script.sh ../test_folder/react/todos/
                 ../test_folder/react/todos/ is containing 3 files and it consume 1189820 bytes
 ```
-3) ### Print summary of company employees attendance
+
+3. ### Print summary of company employees attendance
+
 ```
            So In this script first of all I created random data containing which employee is on
            leave, absent or present using script called "generate_employee_attandance.sh"
            if You have already data of your employee then it should be in the following fashion
                    Employee_id | attendance_status (A,L,P)
-                   A for absent 
+                   A for absent
                    L for leave
                    P for present
                    Like this
@@ -70,6 +79,7 @@ I used sh and bash shell.
 ```
 
 ### Note: current should contains employees.data file for extract id and name
+
 ```
                           data should in this fashion
              **** Multiple spaces allowed between id and name
@@ -80,4 +90,33 @@ I used sh and bash shell.
                    103  Raju
                    104  Tonny
                    105  Beena
+```
+
+4. ### Create Multiple users for employee
+
+```
+           So In this mini-project I created the shell-scripts who are deal with real life problem.
+           Problem:
+           Here is Prafull Sir Who have some new employees and he want to configure the linux machine
+           means create all user accounts for each employee So he come to me because i am also employee
+           of his company and give me task that should manage this all things
+           So I give me a directory containing called Operator further Operator directory containing employees.data
+           and apps directory further apps directory contains a executable programs.
+           1) So I automate the creation of new users according to employees.data where username should be
+           first_name+employeeid and password is also given in employees.data
+           Ex: amit10001
+           2)then each user contains directory called tm.
+           3)then change its ownership using chown for each user
+           4)then copy executable from Operator/apps/ and paste in tm directory for each user.
+           5)also change ownership of all executables for each user
+           6)then create welcome.txt and its first line containing
+          "Welcome employeeFirstName employeeLastName and description of each executable
+           7)then change ownership of welcome.txt for each user
+           8)then create .hushlogin. for each user
+           9)then change its ownership for each user
+          10) then add environment variable inside .bashrc file for each user
+
+          first of all I created script called "content_generator.sh" to run this command bash content_generator.sh
+it will create all the necessary
+
 ```

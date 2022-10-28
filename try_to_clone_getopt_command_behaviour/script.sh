@@ -2,9 +2,11 @@ is_i="N"
 i_value=""
 is_r="N"
 r_value=""
+is_q="N"
 while test -n "$1"
 do
 case $1 in
+	-q) is_q="Y" ;;
 	-i) is_i="Y"
 	    i_value="$i_value $2"
 	    shift ;;
@@ -13,7 +15,9 @@ case $1 in
 	    shift ;;
 	--) shift
 	    break ;;
-	*)  echo "Invalid argument" ;;
+	*) if test $is_q != "Y" ; then
+	   echo "Invalid argument $1" 
+	   fi ;;
 esac
 shift
 done

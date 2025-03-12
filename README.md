@@ -1,6 +1,6 @@
 # Shell Script
 
-Hi, My name is Aakash,This is my shell script respositorie contains various scripts consider all scripts like mini-projects from my side
+A collection of shell script mini-projects for automation, system management, and various tasks.
 
 ## Which shell I used
 
